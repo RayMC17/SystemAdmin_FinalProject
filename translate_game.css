@@ -1,0 +1,76 @@
+/*
+Team Names: Tamika Chen & Raynisha Cornelio
+CMPS3141 - HCI
+PS1 - Translate Game
+Due Date: Nov.10.23
+
+COLLABORATORS: 
+*/
+
+html {
+    background-color: #eee;
+    font-family: Trebuchet MS;
+  }
+  
+  /* Your CSS here */
+  
+  .heading {
+    font-size: 65px;
+    color: grey;
+  }
+  
+  b {
+    color: black;
+  }
+  
+  /* Clear floats after the columns */
+  
+  .heading {
+    font-size: 65px;
+    color: grey;
+  }
+  
+  b {
+    color: black;
+  }
+  
+  .column , td {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    font-size: 25px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    color: grey;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  /* .previous-entries { */
+    /* margin-top: 20px; */
+    /* max-height: 200px; */
+    /* overflow: auto; */
+    /* border: 1px solid #ccc; */
+    /* padding: 10px; */
+  /* } */
+  
+  table tr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  

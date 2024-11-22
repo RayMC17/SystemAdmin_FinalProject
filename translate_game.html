@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ready, Set, Translate!</title>
+    <link type="text/css" href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link type="text/css" href="translate_game.css" rel="stylesheet" />
+    <style>
+      .logout-container {
+        text-align: right;
+        margin: 10px 20px;
+      }
+
+      .logout-button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .logout-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logout-container">
+      <button class="logout-button" id="logoutButton">Logout</button>
+    </div>
+
+    <table id="previous_entries" class="previous-entries">
+      <p class="heading">Translate from <b id="lang_from">Spanish</b> to <b id="lang_to">English</b></p>
+      <tr>
+        <th>
+          <div class="column">
+            <h2 id="from_language">Spanish</h2>
+            <p style="color: black;" id="word_to_translate"></p>
+          </div>
+        </th>
+        <th>
+          <div class="column">
+            <h2 id="to_language">English</h2>
+            <input type="text" id="english" name="englishInput" placeholder="Type your translation">
+          </div>
+        </th>
+        <th>
+          <div class="column">
+            <h2>Answer</h2>
+            <input type="button" value="See Answer" id="seeAnswerButton">
+            <div id="feedback"></div>
+          </div>
+        </th>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="dicts.json"></script>
+    <script type="text/javascript" src="translate_game.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+  </body>
+</html>
+  
